@@ -73,6 +73,10 @@
         font-size: 10px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
+    #btnD {
+        font-size: 30px;
+        position:absolute; top:440px; left:45%; width:25%; height:40px; 
+    }
     
     #minute {
         font-size: 30px;
