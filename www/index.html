@@ -156,7 +156,6 @@
     var active = false;
     var startTime = 0;
     var period = 0;
-    var elapsedTime = 0; //経過時間
 
 
     
@@ -204,11 +203,12 @@
         alarm();
         active = false;
         period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
-        $("#time").html("経過時間：０");
+        $("#time").html("経過時間：0" );
         $("#remain").html("残り時間： " + period);
     }
     function btnDClick(e){
         period -= 10;
+        //document.write("残り時間を-10した。");
     }
     
  
@@ -237,6 +237,7 @@
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
+    <div id="mozi">Mozi</div>
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
