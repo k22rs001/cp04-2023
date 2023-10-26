@@ -38,6 +38,9 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -202,6 +205,9 @@
         period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
         $("#time").html("経過時間：０");
         $("#remain").html("残り時間： " + period);
+    }
+    function btnDClick(e){
+        period -= 10;
     }
     
  
